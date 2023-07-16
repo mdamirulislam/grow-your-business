@@ -35,10 +35,12 @@
     margin-top: 30px;
 
 }
-main{
+
+main {
     max-width: 80%;
     margin: 0 auto;
 }
+
 /* header css style */
 header {
     background-color: rgba(255, 144, 14, 0.10);
@@ -70,10 +72,12 @@ ul li a {
     text-align: center;
     margin-top: 100px;
 }
-.banner-content{
+
+.banner-content {
     width: 800px;
     margin: 0 auto;
 }
+
 .banner-content .banner-title {
     font-size: 4rem;
 }
@@ -81,9 +85,9 @@ ul li a {
 .banner-image img {
     width: 60%;
 }
-  
+
 /* items section css */
-.items{
+.items {
     max-width: 80%;
     margin: 0 auto;
     display: flex;
@@ -92,117 +96,157 @@ ul li a {
     align-items: center;
     margin-top: 100px;
 }
-.items-img{
+
+.items-img {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
 
 }
-.items-img img{
+
+.items-img img {
     width: 300px;
     box-shadow: 5px 5px 10px lightgray;
     border-radius: 8px;
 
 }
-.items-content h3{
+
+.items-content h3 {
     font-size: 2.8rem;
 }
-.out-of{
+
+.out-of {
     font-weight: 700;
 }
-.orange-color{
+
+.orange-color {
     color: #FF900E;
 
 }
 
 /* features section css */
-.features{
+.features {
     margin-top: 130px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
 }
-.features .card{
- border-radius: 8px;
-background: #FFF;
-box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
-padding: 20px;
-margin-top: 20px;
+
+.features .card {
+    border-radius: 8px;
+    background: #FFF;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    padding: 20px;
+    margin-top: 20px;
 }
 
 
-.feature-image img{
+.feature-image img {
     width: 50%;
     padding: 50px 50px 0 50px;
-    margin: 0; 
+    margin: 0;
     border: 1px solid rgba(0, 0, 0, 0.336);
     border-radius: 8px;
 }
-.experience{
+
+.experience {
     text-align: center;
     width: 258px;
     padding: 40px;
     position: relative;
-    bottom:100px;
+    bottom: 100px;
     left: 300px;
 }
-.experience h4{
+
+.experience h4 {
     font-size: 2rem;
 }
-.feature-section-title{
-    border-left:  5px solid #FF900E ;
+
+.feature-section-title {
+    border-left: 5px solid #FF900E;
     padding: 10px;
     margin-bottom: 10px;
 }
+
+.info {
+    display: flex;
+    justify-content: space-around;
+}
+
+.info .info-card {
+    text-align: center;
+    border: 1px solid #FF900E;
+    border-radius: 8px;
+    padding: 40px;
+    margin-top: 100px;
+}
+
+.info-card h3 {
+    color: #424242;
+    font-size: 2.9rem;
+    font-weight: 600;
+}
+
+
 
 
 
 
 /* responsive style for mobile device */
 @media screen and (max-width: 576px) {
+
     /* shared responsive css  */
-    nav{
+    nav,.banner {
         flex-direction: column;
         margin: 0px;
 
     }
-    .section-title{
+
+    .section-title {
         font-size: 2rem;
         margin-bottom: 50px;
         padding-top: 50px;
     }
-    .banner-content{
+
+    .banner-content {
         width: 100%;
         margin: 0 auto;
     }
-    .items-img{
+
+    .items-img {
         grid-template-columns: repeat(1, 1fr);
     }
-    .items{
+
+    .items {
         flex-direction: column;
     }
-    .features{
+
+    .features {
         grid-template-columns: repeat(1, 1fr);
     }
-    .experience{
+
+    .experience {
         position: static;
     }
 }
 
 /* responsive for i pad and medium devise   */
 @media screen and (min-width: 576px) and (max-width:992px) {
-    nav{
+    nav {
         flex-direction: column;
         margin: 0px;
         padding-top: 50px;
 
     }
-    .items{
+
+    .items,.info {
         flex-direction: column;
     }
-    .features{
+
+    .features {
         grid-template-columns: repeat(1, 1fr);
     }
+
     /* .experience{
         position: static;
     } */
