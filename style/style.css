@@ -89,14 +89,19 @@ ul li a {
     gap: 55px;
     justify-content: space-between;
     align-items: center;
+    margin-top: 100px;
 }
 .items-img{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+
 }
 .items-img img{
     width: 300px;
+    box-shadow: 5px 5px 10px lightgray;
+    border-radius: 8px;
+
 }
 .items-content h3{
     font-size: 2.8rem;
@@ -129,6 +134,12 @@ ul li a {
     .banner-content{
         width: 100%;
         margin: 0 auto;
+    }
+    .items-img{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .items{
+        flex-direction: column;
     }
 }
 
