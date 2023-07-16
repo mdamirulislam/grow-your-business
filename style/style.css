@@ -1,0 +1,143 @@
+/* font link import */
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&family=Open+Sans:ital,wght@0,300;0,500;0,700;1,400;1,800&family=Work+Sans:wght@400;500;600;700;800;900&display=swap');
+
+/* shared css style  */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+.section-title {
+    color: #131313;
+    font-size: 2.82rem;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.text-light {
+    color: #727272;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+.btn-primary {
+    font-size: 1.25rem;
+    font-weight: 600px;
+    border-radius: 8px;
+    color: white;
+    background: #FF900E;
+    border: none;
+    padding: 20px 25px;
+    margin-bottom: 50px;
+    margin-top: 30px;
+
+}
+main{
+    max-width: 80%;
+    margin: 0 auto;
+}
+/* header css style */
+header {
+    background-color: rgba(255, 144, 14, 0.10);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 240px;
+}
+
+nav ul {
+    display: flex;
+}
+
+nav ul li {
+    list-style: none;
+    margin-right: 30px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #424242;
+}
+
+.banner {
+    text-align: center;
+    margin-top: 100px;
+}
+.banner-content{
+    width: 800px;
+    margin: 0 auto;
+}
+.banner-content .banner-title {
+    font-size: 4rem;
+}
+
+.banner-image img {
+    width: 60%;
+}
+  
+/* items section css */
+.items{
+    max-width: 80%;
+    margin: 0 auto;
+    display: flex;
+    gap: 55px;
+    justify-content: space-between;
+    align-items: center;
+}
+.items-img{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.items-img img{
+    width: 300px;
+}
+.items-content h3{
+    font-size: 2.8rem;
+}
+.out-of{
+    font-weight: 700;
+}
+.features{
+    color: #FF900E;
+
+}
+
+
+
+
+
+/* responsive style for mobile device */
+@media screen and (max-width: 576px) {
+    /* shared responsive css  */
+    nav{
+        flex-direction: column;
+        margin: 0px;
+
+    }
+    .section-title{
+        font-size: 2rem;
+        margin-bottom: 50px;
+        padding-top: 50px;
+    }
+    .banner-content{
+        width: 100%;
+        margin: 0 auto;
+    }
+}
+
+/* responsive for i pad and medium devise   */
+@media screen and (min-width: 576px) and (max-width:992px) {
+    nav{
+        flex-direction: column;
+        margin: 0px;
+        padding-top: 50px;
+
+    }
+}
