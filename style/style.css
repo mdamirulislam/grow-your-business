@@ -186,10 +186,24 @@ ul li a {
     font-size: 2.9rem;
     font-weight: 600;
 }
+ /* sponsor section css */
+ .sponsor{
+text-align: center;
+margin-top: 130px;
+ }
 
+ .sponsor-logo{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+ }
 
-
-
+ footer{
+    background-color: #FFF4E7;
+    padding: 50px;
+    text-align: center;
+    margin-top: 100px;
+ }
 
 
 /* responsive style for mobile device */
@@ -228,6 +242,12 @@ ul li a {
     .experience {
         position: static;
     }
+    .info,  .sponsor-logo{flex-direction: column; align-items: center;}
+    .sponsor-logo img{
+        width: 80%;
+    }
+   
+   
 }
 
 /* responsive for i pad and medium devise   */
@@ -239,10 +259,14 @@ ul li a {
 
     }
 
-    .items,.info {
+    .items,.info,.sponsor-logo {
         flex-direction: column;
+        align-items: center;
     }
 
+  .sponsor-logo img{
+        width: 80%;
+    }
     .features {
         grid-template-columns: repeat(1, 1fr);
     }
